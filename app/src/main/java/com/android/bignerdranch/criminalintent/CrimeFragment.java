@@ -99,7 +99,7 @@ public class CrimeFragment extends Fragment {
             Uri contactUri = data.getData();
 
             String[] queryFields = new String[] {
-                    ContactsContract.Contacts.DISPLAY_NAME;
+                    ContactsContract.Contacts.DISPLAY_NAME
             };
 
             Cursor c = getActivity().getContentResolver().query(contactUri, queryFields, null, null, null);
